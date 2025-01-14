@@ -22,9 +22,9 @@ class Bullet(Sprite):
         
     def update(self):
         """Move the bullet up the screen."""
-        # Update the exact position of the bullet.
+        # Update the exact position of the bullet,
+        # Then update the rect position.
         self.y -= self.settings.bullet_speed
-        # Update the rect position
         self.rect.y = self.y
         
     def draw_bullet(self):
